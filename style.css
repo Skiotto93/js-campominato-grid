@@ -61,6 +61,9 @@ main {
 .color-add {
     background-color: lightskyblue;
 }
+.select-difficulty {
+    margin-right: 1.25rem;
+}
 /*----------------
     FOOTER
 ----------------*/
