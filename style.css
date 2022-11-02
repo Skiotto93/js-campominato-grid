@@ -1,0 +1,48 @@
+/*----------------
+    RESET
+----------------*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+/*----------------
+HEADER
+----------------*/
+header {
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.logo img {
+    width: 60px;
+}
+.description p {
+    padding-left: 1.25rem;
+    font-size: 1.875rem;
+}
+.container-left, .container-right {
+    display: flex;
+    align-items: center;
+}
+.start-button {
+    padding: .3125rem .9375rem;
+}
+/*----------------
+    MAIN
+----------------*/
+main {
+    background-color: #7fffd4;
+    flex-grow: 1;
+}
+/*----------------
+    FOOTER
+----------------*/
+footer {
+    padding: 1rem;
+}
