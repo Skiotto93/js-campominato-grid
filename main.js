@@ -18,6 +18,7 @@ start.addEventListener('click', function () {
                 console.log(this.innerHTML);
             }       
             );
+            boardContainer.innerHTML = "";
             boardContainer.append(boardCell);
         };
     } else if (normal) {
@@ -30,6 +31,7 @@ start.addEventListener('click', function () {
                 console.log(this.innerHTML);
             }       
             );
+            boardContainer.innerHTML = "";
             boardContainer.append(boardCell);
     }
     } else if (hard) {
@@ -42,6 +44,7 @@ start.addEventListener('click', function () {
                 console.log(this.innerHTML);
             }       
             );
+            boardContainer.innerHTML = "";
             boardContainer.append(boardCell);
     }
 }
