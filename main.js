@@ -43,4 +43,6 @@ start.addEventListener('click', function () {
             }       
             );
             boardContainer.append(boardCell);
-    }; 
+    }
+}
+}); 
