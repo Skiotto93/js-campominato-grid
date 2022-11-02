@@ -4,11 +4,10 @@ const easy = document.querySelector(".easy");
 const normal = document.querySelector(".normal");
 const hard = document.querySelector(".hard");
 
-
-
 const start = document.querySelector(".start-button");
 start.addEventListener('click', function () {
     if (easy) {
+        boardContainer.innerHTML = "";
         for ( let i = 1; i <= 100; i++ ) {
             const boardCell = document.createElement("div");
             boardCell.innerHTML = i;
@@ -17,11 +16,11 @@ start.addEventListener('click', function () {
                 boardCell.classList.add("color-add")
                 console.log(this.innerHTML);
             }       
-            );
-            boardContainer.innerHTML = "";
+            );            
             boardContainer.append(boardCell);
         };
     } else if (normal) {
+        boardContainer.innerHTML = "";
         for ( let i = 1; i <= 81; i++ ) {
             const boardCell = document.createElement("div");
             boardCell.innerHTML = i;
@@ -31,10 +30,10 @@ start.addEventListener('click', function () {
                 console.log(this.innerHTML);
             }       
             );
-            boardContainer.innerHTML = "";
             boardContainer.append(boardCell);
     }
     } else if (hard) {
+        boardContainer.innerHTML = "";
         for ( let i = 1; i <= 49; i++ ) {
             const boardCell = document.createElement("div");
             boardCell.innerHTML = i;
@@ -44,7 +43,6 @@ start.addEventListener('click', function () {
                 console.log(this.innerHTML);
             }       
             );
-            boardContainer.innerHTML = "";
             boardContainer.append(boardCell);
     }
 }
