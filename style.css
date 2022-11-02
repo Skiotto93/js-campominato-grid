@@ -22,7 +22,7 @@ header {
 .logo img {
     width: 60px;
 }
-.description p {
+.description h1 {
     padding-left: 1.25rem;
     font-size: 1.875rem;
 }
@@ -39,6 +39,27 @@ header {
 main {
     background-color: #7fffd4;
     flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.board {
+    width: 31.25rem;
+    height: 31.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start; 
+}
+.board-cell {
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.color-add {
+    background-color: lightskyblue;
 }
 /*----------------
     FOOTER
